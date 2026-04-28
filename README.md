@@ -30,4 +30,7 @@ A Machine Learning based web application that predicts house prices based on use
 ---
 
 ## 📁 Project Structure
-
+<p align="center">
+  <img src="structure.png" alt="App UI" width="500" height="450">
+</p>
+<!-- <img src="static/structure.png"> -->

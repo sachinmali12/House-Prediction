@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏠 House Price Predictor</h1>
+
+    <form id="predictForm">
+
+        <!-- SECTION 1 -->
+        <div class="section">
+            <h2>🏠 Details of House</h2>
+
+            <div class="grid">
+                <input type="number" name="area" placeholder="Area (sq ft)" required>
+
+                <select name="bedrooms">
+                    <option value="">Bedrooms</option>
+                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                </select>
+
+                <select name="bathrooms">
+                    <option value="">Bathrooms</option>
+                    <option>1</option><option>2</option><option>3</option><option>4</option>
+                </select>
+
+                <select name="stories">
+                    <option value="">Stories</option>
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="section">
+            <h2>⚙️ Features</h2>
+
+            <div class="grid">
+                <select name="parking">
+                    <option value="">Parking</option>
+                    <option>0</option><option>1</option><option>2</option>
+                </select>
+
+                <select name="mainroad">
+                    <option value="">Main Road</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <select name="guestroom">
+                    <option value="">Guest Room</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <select name="basement">
+                    <option value="">Basement</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <select name="hotwaterheating">
+                    <option value="">Hot Water</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <select name="airconditioning">
+                    <option value="">Air Conditioning</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <select name="prefarea">
+                    <option value="">Preferred Area</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <select name="furnishingstatus">
+                    <option value="">Furnishing</option>
+                    <option value="0">Unfurnished</option>
+                    <option value="1">Semi-Furnished</option>
+                    <option value="2">Fully Furnished</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Predict Price</button>
+
+    </form>
+
+    <h2 id="result"></h2>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* SECTION */
+.section {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #38bdf8;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-sizing: border-box; /* 🔥 IMPORTANT */
+}
+/* GRID (2 COLUMN) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px; /* increase spacing */
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #22c55e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+/* RESULT */
+#result {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

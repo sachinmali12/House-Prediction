@@ -1,2 +1,33 @@
-# House-Prediction
-🏠 House Price Prediction Web App using Machine Learning (Ridge Regression) with Flask backend and modern responsive UI. Predict prices in Lakh/Crore instantly.
+# 🏠 House Price Prediction Web App
+
+A Machine Learning based web application that predicts house prices based on user inputs like area, bedrooms, bathrooms, and other features.
+
+---
+
+## 🚀 Features
+
+- 📊 ML Model (Ridge Regression)
+- 🧠 Feature Engineering included
+- 🌐 Flask Backend API
+- 🎨 Clean & Responsive UI (2-column layout)
+- 💰 Price output in **Lakh / Crore format**
+
+---
+
+## 🖥️ UI Preview
+
+![App UI](ui.png)
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Flask (Python)  
+- **ML Libraries:** Pandas, NumPy, Scikit-learn  
+- **Model:** Ridge Regression  
+
+---
+
+## 📁 Project Structure
+
